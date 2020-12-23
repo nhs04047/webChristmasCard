@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년도 고생했습니다!!</title>
+
+    <link rel="shortcut icon"
+        href="favicon.png">
+
+    <meta property="og:image"
+        content="ogimg.jpg">
+    <meta property="og:title" content="연말인사 카드">
+    <meta property="og:description" content="2020년도 모두 고생했습니다!">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0 auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .massagebox {
+            background-color: ivory;
+
+            width: 500px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 9px white;
+
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        .fit-picture{
+            background-color: white;
+            width: 400px;
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+
+            margin: 100px auto 0 auto;
+
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+
+        }
+        .img-div{
+            text-align: center;
+        }
+        @media screen and (max-width: 750px) {
+            .massagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .fit-picture {
+                width: 300px;
+                margin: 70px auto 0 auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0 auto;
+            }
+
+
+        }
+
+
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert('앗 간지렁~')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+        
+    </div>
+    <div class="letter-open">
+        <div class="img-div">
+            <img class="fit-picture" onclick="go_rtan()" src="univers.jpg">
+        </div>
+        <h1>2020년 수고 많았어요!</h1>
+        <div class="massagebox">
+            Dear. * * * <br />
+            <br />
+            밖이 참 춥네, 그치?<br />
+            난 옆구리가 더 추운 거 같아ㅎㅎ<br />
+            다들 따뜻한 크리스마스 보내렴^^<br />
+            올해도 고생 많았다 친구들~<br />
+            <p class="from">date. ****/**/** From. * * *</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
