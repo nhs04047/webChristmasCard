@@ -16,7 +16,7 @@
 - SNS 공유 가능(wide 750px 이하 최적화)
 
 
-![KakaoTalk_20210113_192021312](https://user-images.githubusercontent.com/71453094/104441366-eba8c280-55d6-11eb-8e28-7f1bbd73e0c2.png)
+![KakaoTalk_20210113_192021312](https://user-images.githubusercontent.com/71453094/104441366-eba8c280-55d6-11eb-8e28-7f1bbd73e0c2.png){: width="100" height="100"}
 
 
 'HTML' , 'CSS' , 'JavaScript' 
